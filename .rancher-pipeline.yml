@@ -1,0 +1,10 @@
+stages:
+- name: BUILD
+  steps:
+  - runScriptConfig:
+      image: python:latest
+      shellScript: |-
+        pip install mkdocs
+        mkdocs build
+timeout: 60
+notification: {}
