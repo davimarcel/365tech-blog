@@ -1,0 +1,20 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  install:
+    - npm install netlify-cli -g
+  build:
+    - mkdocs build
+    - netlify deploy --dir ./site
+  deploy:
+    - mkdocs build
+    - netlify deploy --prod --dir ./site
