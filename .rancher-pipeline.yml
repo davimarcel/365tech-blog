@@ -5,6 +5,9 @@ stages:
       image: python:latest
       shellScript: |-
         pip install mkdocs
+        pip install mkdocs-material
+        pip install mkdocs-material-extensions
+
         mkdocs build
 timeout: 60
 notification: {}
