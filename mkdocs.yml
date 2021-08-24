@@ -60,9 +60,11 @@ nav:
   - Arquitetura: 'emBreve.md'
   - Instalando:
     - HAProxy: 'Instalando/haproxy.md'
+    - Nvm: 'Instalando/nvm.md'
   - Linux:
     - Lolcat: 'lolcat.md'
     - ifconfig.me: 'ifconfig.me.md'
+
 
 
     
